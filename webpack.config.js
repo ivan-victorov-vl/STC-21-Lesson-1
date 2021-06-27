@@ -3,15 +3,16 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     mode: "development",
-
+    entry: "./src/index.jsx",
+    resolve: {
+        extensions: ['.js', '.json', '.jsx'],
+    },
     module: {
         rules: [
-
             {
-                test: /\.js$/,
+                test: /\.jsx$/,
                 exclude: /node_modules/,
-                loader: 'babel-loader'
-
+                loader: 'babel-loader',
             },
 
             // Loading images
