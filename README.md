@@ -1,6 +1,12 @@
 # Program "Hello world" on React
 Displays the date the application was built, the text "Hello world", and the Innopolis University logo.
 
+## Install
+
+```bash
+npm install
+```
+
 ## Build
 
 ```bash
